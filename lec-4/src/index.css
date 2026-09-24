@@ -1,0 +1,73 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Full screen center */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1e1e2f, #3a3a5f);
+}
+
+/* Main container */
+div {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Score */
+h1 {
+  font-size: 60px;
+  color: #00ffcc;
+  margin-bottom: 10px;
+}
+
+/* Message */
+h2 {
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+
+/* Buttons */
+button {
+  margin: 10px;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  background: #ffffff;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Hover effect */
+button:hover {
+  transform: translateY(-3px);
+  background: #00ffcc;
+  color: #000;
+  box-shadow: 0 5px 15px rgba(0, 255, 204, 0.4);
+}
+
+/* Restart button special */
+button:last-child {
+  background: #ff4d4d;
+  color: white;
+}
+
+button:last-child:hover {
+  background: #ff1a1a;
+  box-shadow: 0 5px 15px rgba(255, 0, 0, 0.4);
+}

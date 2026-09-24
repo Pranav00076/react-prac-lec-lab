@@ -1,0 +1,18 @@
+
+
+*{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.Nav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(209, 243, 230);
+}
+
+h3:active{
+    color: red;
+}
+.active{
+    color: red;
+}

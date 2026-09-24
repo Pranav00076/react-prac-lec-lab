@@ -1,0 +1,14 @@
+*{
+    color: black;
+    text-align: center;
+}
+table{
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+tr, td, th{
+    border: 0.5px solid black;
+    border-collapse: collapse;
+}

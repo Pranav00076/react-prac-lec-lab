@@ -1,0 +1,160 @@
+/* Background */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(circle at top, #1f1f3a, #0f0f1f);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Layout */
+.game-container {
+  display: flex;
+  gap: 30px;
+  width: 90vw;
+  max-width: 1100px;
+}
+
+/* Glass Card */
+.left-panel,
+.right-panel {
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Left Side */
+.left-panel {
+  flex: 2;
+  text-align: center;
+}
+
+/* Right Side */
+.right-panel {
+  flex: 1;
+}
+
+/* Header */
+.header {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #ffd369;
+  text-shadow: 0 0 10px rgba(255, 211, 105, 0.6);
+}
+
+/* Score Box */
+.currentscore {
+  font-size: 1.4rem;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  margin-bottom: 10px;
+}
+
+/* Message */
+.message {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #00f5d4;
+}
+
+/* Winner */
+.wins {
+  color: #ff4d6d;
+  margin: 10px 0;
+}
+
+/* Buttons */
+button {
+  background: linear-gradient(135deg, #ffd369, #ffb703);
+  border: none;
+  padding: 12px 18px;
+  margin: 8px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease;
+  box-shadow: 0 4px 15px rgba(255, 183, 3, 0.4);
+}
+
+/* Hover Glow */
+button:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 183, 3, 0.7);
+}
+
+/* Click */
+button:active {
+  transform: scale(0.95);
+}
+
+/* Special Buttons */
+button:nth-child(8) {
+  background: linear-gradient(135deg, #4cc9f0, #4895ef);
+}
+
+button:nth-child(9) {
+  background: linear-gradient(135deg, #ff4d6d, #c9184a);
+}
+
+/* Moves Panel */
+.Moves {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+/* Moves Title */
+.Moves h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #ffd369;
+}
+
+/* Moves List */
+.Moves ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Move Item */
+.Moves li {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 8px;
+  margin: 6px 0;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  transition: 0.2s;
+}
+
+/* Hover on moves */
+.Moves li:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* Scrollbar */
+.Moves::-webkit-scrollbar {
+  width: 6px;
+}
+.Moves::-webkit-scrollbar-thumb {
+  background: #ffd369;
+  border-radius: 10px;
+}
+
+/* Round + wins */
+.currentround,
+.whowon {
+  margin: 8px 0;
+  color: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .game-container {
+    flex-direction: column;
+  }
+}

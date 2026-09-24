@@ -1,0 +1,62 @@
+/* Page */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+/* Header */
+h1 {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  background: #ef4444;
+  padding: 15px;
+  z-index: 1000;
+}
+
+/* Container spacing */
+.container {
+  padding-top: 80px;
+}
+
+/* 🔥 GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Card */
+.card {
+  background: #1e293b;
+  border-radius: 12px;
+  padding: 15px;
+  transition: 0.3s;
+  border: 1px solid #334155;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.6);
+}
+
+/* Name */
+.card h3 {
+  text-transform: capitalize;
+  color: #facc15;
+  margin-bottom: 10px;
+}
+
+/* Abilities */
+.card p {
+  background: #334155;
+  margin: 5px 0;
+  padding: 6px;
+  border-radius: 6px;
+  font-size: 13px;
+  text-transform: capitalize;
+}
